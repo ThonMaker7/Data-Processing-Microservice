@@ -22,4 +22,4 @@ C. To request data, send a POST request to one of the endpoints with a JSON
         ]
         })
         print(response.json())
-D. 
+D. <img width="785" height="398" alt="Screenshot 2026-05-20 at 4 06 01 PM" src="https://github.com/user-attachments/assets/7567bfa7-1922-45ff-805b-1be997750237" />
