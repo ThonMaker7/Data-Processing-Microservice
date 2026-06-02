@@ -53,6 +53,9 @@ def tags():
     return jsonify({"tags": keywords})
 
 # Endpoint 3, priority sorting
+# for the scoring system there couldve been more in depth variables
+# instead of score, it couldve been a defined constant that said why 
+# and when this would be subtracted or added
 @app.route('/process/priority', methods=['POST'])
 
 def priority():
@@ -61,7 +64,6 @@ def priority():
 
     priority_words = {"fix", "bug", "urgent", "asap", "critical", "crash",
                     "broken", "error", "fail", "deploy", "hotfix", "issue"}
-    
     results = []
     for task in tasks:
         name = task.get('name', '').lower()
